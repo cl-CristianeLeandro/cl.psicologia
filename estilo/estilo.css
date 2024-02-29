@@ -62,7 +62,7 @@ body {
   text-decoration: none;
 }
 
-.navegacao-pagina a:hover {
+.navegacao-pagina li:hover a {
   color: var(--cor-branco);
 }
 
