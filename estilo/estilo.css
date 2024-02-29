@@ -1,0 +1,260 @@
+@import url("fonts.css");
+@import url("variavel-global.css");
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color-branco);
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height:  var(--altura-header);
+  background-color: var(--header-background-color-rosa);
+  padding: 0 24px;
+  font-family: var(--font-family-droidserif);
+  box-shadow: 5px 1px 5px black;
+  z-index: 10;
+}
+
+.nome-psi {
+  font-family: var(--font-family-malibu);
+  font-size: 44px;
+}
+
+.navegacao-pagina {
+  height: 100%;
+}
+
+.navegacao-pagina ul {
+  display: flex;
+  height: 100%;
+}
+
+.navegacao-pagina li {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.navegacao-pagina a {
+  color: black;
+  line-height: var(--altura-header);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Conteudo geral da pagina */
+
+.conteudo-pagina {
+  display: block;
+}
+
+.secoes-pagina {
+  position: relative;
+  top: var(--altura-header);
+  width: 100%;
+  min-height: 600px;
+  padding: 12px;
+}
+
+.secao-pagina {
+  width: 100%;
+  min-height: 500px;
+  font-family: var(--font-family-droidserif);
+  padding-top: 42px;
+  margin-bottom: 60px;
+}
+
+figure {
+  display: flex;
+  padding: 4px 120px;
+}
+
+.invertido {
+  flex-direction: row-reverse;
+}
+
+figure img {
+  border: 2px solid #B58296;
+  border-radius: 20px;
+}
+
+figure figcaption {
+  padding: 26px;
+}
+
+.secao-pagina div {
+  display: flex;
+}
+
+.secao-pagina div p {
+  padding: 8px;
+}
+
+.secao-pagina div p:first-child {
+  margin-right: 8px;
+}
+
+/* Seção de apresentação */
+
+.secao-apresentacao h1 {
+  display: none;
+}
+
+.secao-apresentacao figure {
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.secao-apresentacao figcaption {
+  line-height: 34px;
+  width: 450px;
+}
+
+.img-apresentacao {
+  width: 300px;
+}
+
+/* Seção de formação */
+
+.secao-formacao {
+  display: flex;
+}
+
+.secao-formacao h2 {
+  width: 280px;
+  line-height: 200px;
+  text-align: center;
+  font-weight: 700;
+  background-color: var(--header-background-color-rosa);
+}
+
+.lista-ordenada-formacao {
+  list-style: inside;
+  list-style-type: decimal;
+  color: var(--cor-branco);
+  padding: 48px;
+  background-color: var(--cor-rosa-escuro);
+}
+
+.lista-ordenada-formacao li {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.lista-nao-ordenada-formacao {
+  list-style: inside;
+}
+
+.lista-nao-ordenada-formacao li {
+  height: 50px;
+  padding: 12px 20px;
+  font-weight: 400;
+}
+
+/* seção Abordagem Terapeutica */
+
+.secao-abordagem-terapeutica h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.secao-abordagem-terapeutica figcaption {
+  line-height: 24px;
+}
+
+.lista-ordenada-abordagem {
+  list-style: inside;
+  list-style-type: decimal;
+  margin-top: 18px;
+}
+
+.lista-ordenada-abordagem li {
+  font-weight: 700;
+}
+
+.lista-nao-ordenada-abordagem li {
+  padding: 12px 20px;
+  font-weight: 400;
+}
+
+/* secao metodologia de trabalho */
+
+.secao-metodologia-de-trabalho {
+  display: flex;
+}
+
+.secao-metodologia-de-trabalho h2 {
+  width: 320px;
+  line-height: 200px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--cor-branco);
+  background-color: var(--cor-rosa-escuro);
+}
+
+.descricao-metodologia {
+  flex-direction: column;
+  padding: 26px;
+  line-height: 24px;
+  background-color: var(--header-background-color-rosa);
+}
+
+.descricao-metodologia span {
+  margin-bottom: 20px;
+}
+
+.lista-ordenada-metodologia-de-trabalho {
+  list-style: inside;
+  list-style-type: decimal;
+}
+
+.lista-ordenada-metodologia-de-trabalho li {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho {
+  list-style: inside;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho li {
+  height: 50px;
+  padding: 12px 20px;
+  font-weight: 400;
+}
+
+/* Whatsapp */
+
+.whatsapp {
+  position: fixed;
+  bottom: 12px;
+  right: 6px;
+  width: 50px;
+}
+
+/* Seção rodapé */
+
+.rodape-pagina {
+  width: 100%;
+}
+
+.rodape-pagina span {
+  padding: 10px;
+  font-family: var(--font-family-droidserif);
+}
