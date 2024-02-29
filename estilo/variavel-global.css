@@ -1,0 +1,11 @@
+:root {
+    --altura-header: 60px;
+
+    --background-color-branco: #FAFAFA;
+    --header-background-color-rosa: #F5CBDB;
+    --cor-rosa-escuro: #f35994;
+    --cor-branco: #FAFAFA;
+
+    --font-family-droidserif: DroidSerif, serif;
+    --font-family-malibu: Malibu;
+}
