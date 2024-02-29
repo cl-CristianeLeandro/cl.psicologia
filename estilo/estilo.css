@@ -47,7 +47,12 @@ body {
 
 .navegacao-pagina li {
   height: 100%;
+  padding: 0 6px;
   margin-right: 10px;
+}
+
+.navegacao-pagina li:hover {
+  background-color: var(--cor-rosa-escuro);
 }
 
 .navegacao-pagina a {
@@ -55,6 +60,10 @@ body {
   line-height: var(--altura-header);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navegacao-pagina a:hover {
+  color: var(--cor-branco);
 }
 
 /* Conteudo geral da pagina */
@@ -226,7 +235,6 @@ figure figcaption {
 
 .lista-ordenada-metodologia-de-trabalho li {
   font-weight: bold;
-  margin-bottom: 6px;
 }
 
 .lista-nao-ordenada-metodologia-de-trabalho {
@@ -235,6 +243,7 @@ figure figcaption {
 
 .lista-nao-ordenada-metodologia-de-trabalho li {
   height: 50px;
+  margin-bottom: 18px;
   padding: 12px 20px;
   font-weight: 400;
 }
