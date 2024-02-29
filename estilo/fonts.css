@@ -1,0 +1,15 @@
+@font-face {
+    font-family: DroidSerif;
+    src: url(../fonts/droid-serif/DroidSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: DroidSerifBold;
+    src: url(../fonts/droid-serif/DroidSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: Malibu;
+    src: url(../fonts/malibu_3/Malibu.ttf);
+}
+  
