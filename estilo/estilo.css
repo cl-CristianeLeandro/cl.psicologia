@@ -102,17 +102,17 @@ body {
   margin-right: 8px;
 }
 
-/* Seção de apresentação */
+/* Seção de inicial */
 
-.secao-apresentacao h1 {
+.secao-inicial h1 {
   display: none;
 }
 
-.secao-apresentacao-img-home {
+.secao-inicial-img-home {
   position: relative;
 }
 
-.secao-apresentacao-figcaption {
+.secao-inicial-figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -120,7 +120,7 @@ body {
   height: 100%;
 }
 
-.secao-apresentacao-figcaption-texto-um {
+.secao-inicial-figcaption-texto-um {
   display: block;
   width: 400px;
   height: 60px;
@@ -135,7 +135,7 @@ body {
   background-color: var(--cor-rosa-escuro);
 }
 
-.secao-apresentacao-figcaption-texto-dois {
+.secao-inicial-figcaption-texto-dois {
   flex-direction: column;
   align-items: end;
   width: 400px;
@@ -144,13 +144,13 @@ body {
   margin-top: 20px;
 }
 
-.secao-apresentacao-figcaption-texto-dois strong {
+.secao-inicial-figcaption-texto-dois strong {
   color: var(--cor-branco);
   padding: 2px 1px;
   background-color: var(--cor-rosa-escuro);
 }
 
-.img-apresentacao {
+.img-inicial {
   width: 100%;
 }
 
