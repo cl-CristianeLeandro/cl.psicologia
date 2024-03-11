@@ -77,33 +77,18 @@ body {
   top: var(--altura-header);
   width: 100%;
   min-height: 600px;
-  padding: 12px;
 }
 
 .secao-pagina {
   width: 100%;
   min-height: 500px;
   font-family: var(--font-family-droidserif);
-  padding-top: 42px;
   margin-bottom: 60px;
 }
 
-figure {
-  display: flex;
-  padding: 4px 120px;
-}
 
 .invertido {
   flex-direction: row-reverse;
-}
-
-figure img {
-  border: 2px solid #B58296;
-  border-radius: 20px;
-}
-
-figure figcaption {
-  padding: 26px;
 }
 
 .secao-pagina div {
@@ -124,18 +109,50 @@ figure figcaption {
   display: none;
 }
 
-.secao-apresentacao figure {
-  justify-content: space-between;
-  margin-top: 28px;
+.secao-apresentacao-img-home {
+  position: relative;
 }
 
-.secao-apresentacao figcaption {
-  line-height: 34px;
-  width: 450px;
+.secao-apresentacao-figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.secao-apresentacao-figcaption-texto-um {
+  display: block;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cor-branco);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border-radius: 14px;
+  background-color: var(--cor-rosa-escuro);
+}
+
+.secao-apresentacao-figcaption-texto-dois {
+  flex-direction: column;
+  align-items: end;
+  width: 400px;
+  height: 60px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.secao-apresentacao-figcaption-texto-dois strong {
+  color: var(--cor-branco);
+  padding: 2px 1px;
+  background-color: var(--cor-rosa-escuro);
 }
 
 .img-apresentacao {
-  width: 300px;
+  width: 100%;
 }
 
 /* Seção de formação */
