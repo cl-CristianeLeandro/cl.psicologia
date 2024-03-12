@@ -56,6 +56,9 @@ body {
 }
 
 .navegacao-pagina a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: black;
   line-height: var(--altura-header);
   text-transform: uppercase;
