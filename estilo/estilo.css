@@ -56,6 +56,9 @@ body {
 }
 
 .navegacao-pagina a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: black;
   line-height: var(--altura-header);
   text-transform: uppercase;
@@ -77,33 +80,17 @@ body {
   top: var(--altura-header);
   width: 100%;
   min-height: 600px;
-  padding: 12px;
 }
 
 .secao-pagina {
   width: 100%;
   min-height: 500px;
   font-family: var(--font-family-droidserif);
-  padding-top: 42px;
-  margin-bottom: 60px;
-}
-
-figure {
-  display: flex;
-  padding: 4px 120px;
+  margin-bottom: 4px;
 }
 
 .invertido {
   flex-direction: row-reverse;
-}
-
-figure img {
-  border: 2px solid #B58296;
-  border-radius: 20px;
-}
-
-figure figcaption {
-  padding: 26px;
 }
 
 .secao-pagina div {
@@ -118,24 +105,110 @@ figure figcaption {
   margin-right: 8px;
 }
 
-/* Seção de apresentação */
+/* Seção de inicial */
 
-.secao-apresentacao h1 {
+.secao-inicial h1 {
   display: none;
 }
 
-.secao-apresentacao figure {
-  justify-content: space-between;
-  margin-top: 28px;
+.secao-inicial-img-home {
+  position: relative;
 }
 
-.secao-apresentacao figcaption {
-  line-height: 34px;
-  width: 450px;
+.secao-inicial-figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.img-apresentacao {
-  width: 300px;
+.secao-inicial-figcaption-texto-um {
+  display: block;
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cor-branco);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border-radius: 14px;
+  background-color: var(--cor-rosa-escuro);
+}
+
+.secao-inicial-figcaption-texto-dois {
+  flex-direction: column;
+  align-items: end;
+  width: 400px;
+  height: 60px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.secao-inicial-figcaption-texto-dois strong {
+  color: var(--cor-branco);
+  padding: 2px 1px;
+  background-color: var(--cor-rosa-escuro);
+}
+
+.img-inicial {
+  width: 100%;
+}
+
+/* Seção Sintomas */
+
+.secao-sintomas {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: var(--header-background-color-rosa);
+}
+
+.secao-sintomas-img img {
+  width: 100%;
+}
+
+.secao-sintomas h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.secao-sintomas h2 strong {
+  color: var(--cor-rosa-escuro);
+}
+
+.secao-sintomas h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.secao-sintomas h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+  text-align: center;
+}
+
+.secao-sintomas .secao-sintomas-precisa-desenvolver {
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.secao-sintomas-precisa-desenvolver span {
+  line-height: 60px;
+  padding: 4px;
+  font-size: 20px;
+  margin-right: 8px;
+  background-color: var(--cor-rosa-escuro);
 }
 
 /* Seção de formação */
