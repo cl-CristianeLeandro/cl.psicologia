@@ -26,7 +26,7 @@ body {
   height:  var(--altura-header);
   background-color: var(--header-background-color-rosa);
   padding: 0 24px;
-  font-family: var(--font-family-droidserif);
+  font-family: var(--font-family-droidserif), serif;
   box-shadow: 5px 1px 5px black;
   z-index: 10;
 }
@@ -85,7 +85,7 @@ body {
 .secao-pagina {
   width: 100%;
   min-height: 500px;
-  font-family: var(--font-family-droidserif);
+  font-family: var(--font-family-droidserif), serif;
   margin-bottom: 4px;
 }
 
@@ -338,5 +338,5 @@ body {
 
 .rodape-pagina span {
   padding: 10px;
-  font-family: var(--font-family-droidserif);
+  font-family: var(--font-family-droidserif), serif;
 }
