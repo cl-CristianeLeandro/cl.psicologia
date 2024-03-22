@@ -279,46 +279,104 @@ body {
 
 .secao-metodologia-de-trabalho {
   display: flex;
-}
-
-.secao-metodologia-de-trabalho h2 {
-  width: 320px;
-  line-height: 200px;
-  text-align: center;
-  font-weight: 700;
-  color: var(--cor-branco);
-  background-color: var(--cor-rosa-escuro);
-}
-
-.descricao-metodologia {
   flex-direction: column;
-  padding: 26px;
-  line-height: 24px;
   background-color: var(--header-background-color-rosa);
 }
 
-.descricao-metodologia span {
-  margin-bottom: 20px;
+.secao-metodologia-de-trabalho h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.secao-metodologia-de-trabalho h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.container-lista-ordenada-metodologia-de-trabalho {
+  position: relative;
+  margin-bottom: 28px;
 }
 
 .lista-ordenada-metodologia-de-trabalho {
+  display: flex;
+  margin: 0 auto;
   list-style: inside;
   list-style-type: decimal;
+  counter-reset: contador;
+  z-index: 5;
 }
 
 .lista-ordenada-metodologia-de-trabalho li {
   font-weight: bold;
+  color: var(--cor-rosa-escuro);
+  margin-right: 16px;
 }
 
-.lista-nao-ordenada-metodologia-de-trabalho {
-  list-style: inside;
+.lista-ordenada-metodologia-de-trabalho li::marker {
+  z-index: 5;
 }
 
 .lista-nao-ordenada-metodologia-de-trabalho li {
-  height: 50px;
-  margin-bottom: 18px;
-  padding: 12px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 280px;
   font-weight: 400;
+  color: var(--cor-branco);
+  line-height: 22px;
+  text-align: center;
+  padding: 8px;
+  background-color: black;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho li::before {
+  counter-increment: contador;
+  content: counter(contador);
+  position: absolute;
+  top: -18px;
+  left: -26px;
+  width: 40px;
+  height: 30px;
+  padding-top: 8px;
+  background-color: var(--cor-rosa-escuro);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho li::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  width: 60px;
+  height: 10px;
+  background-color: var(--cor-rosa-escuro);
+  z-index: -1;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho.nao-exibir-after li::after {
+  display: none;
+}
+
+.descricao-metodologia {
+  text-align: center;
+  padding: 8px; 
+  font-size: 20px; 
+}
+
+.descricao-metodologia span {
+  margin: 0 40px 28px;
+}
+
+.descricao-metodologia strong {
+  line-height: 24px;
+  color: var(--cor-rosa-escuro);
 }
 
 /* Whatsapp */
