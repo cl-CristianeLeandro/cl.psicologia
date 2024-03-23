@@ -84,7 +84,7 @@ body {
 
 .secao-pagina {
   width: 100%;
-  min-height: 500px;
+  min-height: 680px;
   font-family: var(--font-family-droidserif), serif;
   margin-bottom: 4px;
 }
@@ -194,6 +194,7 @@ body {
   font-weight: 700;
   color: var(--cor-rosa-escuro);
   text-align: center;
+  margin-top: 40px;
 }
 
 .secao-sintomas .secao-sintomas-precisa-desenvolver {
@@ -211,41 +212,86 @@ body {
   background-color: var(--cor-rosa-escuro);
 }
 
-/* Seção de formação */
-
-.secao-formacao {
-  display: flex;
-}
-
-.secao-formacao h2 {
-  width: 280px;
-  line-height: 200px;
-  text-align: center;
-  font-weight: 700;
+/* Quem eu sou */
+.secao-quem-eu-sou {
   background-color: var(--header-background-color-rosa);
 }
 
-.lista-ordenada-formacao {
-  list-style: inside;
-  list-style-type: decimal;
-  color: var(--cor-branco);
-  padding: 48px;
-  background-color: var(--cor-rosa-escuro);
+.secao-quem-eu-sou figure {
+  display: flex;
 }
 
-.lista-ordenada-formacao li {
-  font-weight: bold;
+.secao-quem-eu-sou figcaption {
+  padding: 0 26px;
+}
+
+.secao-quem-eu-sou img {
+  height: 680px;
+}
+
+.lista-nao-ordenada-quem-eu-sou {
+  list-style: inside;
+  margin: 24px 0;
+}
+
+.lista-nao-ordenada-quem-eu-sou li {
+  line-height: 28px;
+}
+
+.secao-quem-eu-sou h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+  margin: 36px 0;
+}
+
+.secao-quem-eu-sou h3 {
   line-height: 24px;
 }
 
-.lista-nao-ordenada-formacao {
-  list-style: inside;
+/* Seção de formação */
+
+.secao-areas-que-trabalho {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.lista-nao-ordenada-formacao li {
-  height: 50px;
-  padding: 12px 20px;
-  font-weight: 400;
+.secao-areas-que-trabalho .secao-areas-que-trabalho-titulo {
+  width: 20%;
+  align-items: center;
+  padding: 0 32px;
+  color: var(--cor-branco);
+  background-color: var(--cor-rosa-escuro);
+}
+
+.secao-areas-que-trabalho-titulo h2 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.secao-areas-que-trabalho .container-secao-areas-que-trabalho {
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 24px;
+  background-color: var(--header-background-color-rosa);
+}
+
+.container-secao-areas-que-trabalho div {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-secao-areas-que-trabalho span {
+  width: 280px;
+  font-size: 20px;
+  color: var(--cor-branco);
+  padding: 10px;
+  text-align: center;
+  background-color: var(--cor-rosa-escuro);
 }
 
 /* seção Abordagem Terapeutica */
@@ -288,7 +334,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: var(--cor-rosa-escuro);
-  margin-top: 28px;
+  margin-top: 40px;
   margin-bottom: 8px;
 }
 
