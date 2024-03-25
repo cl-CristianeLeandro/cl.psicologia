@@ -77,14 +77,12 @@ body {
 
 .secoes-pagina {
   position: relative;
-  top: var(--altura-header);
   width: 100%;
-  min-height: 600px;
 }
 
 .secao-pagina {
   width: 100%;
-  min-height: 680px;
+  min-height: 600px;
   font-family: var(--font-family-droidserif), serif;
   margin-bottom: 4px;
 }
@@ -107,12 +105,26 @@ body {
 
 /* Seção de inicial */
 
+.secao-pagina.secao-inicial {
+  height: 758px;
+  background-color: var(--header-background-color-rosa);
+}
+
+.secao-pagina.secao-inicial {
+  padding-top: var(--altura-header);
+}
+
 .secao-inicial h1 {
   display: none;
 }
 
 .secao-inicial-img-home {
   position: relative;
+}
+
+.img-inicial {
+  width: 100%;
+  height: 100%;
 }
 
 .secao-inicial-figcaption {
@@ -151,10 +163,6 @@ body {
   color: var(--cor-branco);
   padding: 2px 1px;
   background-color: var(--cor-rosa-escuro);
-}
-
-.img-inicial {
-  width: 100%;
 }
 
 /* Seção Sintomas */
@@ -294,31 +302,52 @@ body {
   background-color: var(--cor-rosa-escuro);
 }
 
-/* seção Abordagem Terapeutica */
+/* seção Abordagem avaliações */
 
-.secao-abordagem-terapeutica h2 {
+.secao-avaliacoes-clientes {
+  padding: 36px 14px;
+  background-color: var(--header-background-color-rosa);
+}
+
+.secao-avaliacoes-clientes h2 {
+  font-size: 26px;
+  font-weight: 700;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 
-.secao-abordagem-terapeutica figcaption {
-  line-height: 24px;
+.container-avaliacoes-clientes {
+  width: 100%;
+  padding: 28px 26px;
+  overflow-x: scroll;
 }
 
-.lista-ordenada-abordagem {
-  list-style: inside;
-  list-style-type: decimal;
-  margin-top: 18px;
+.avaliacao-cliente {
+  position: relative;
+  width: 220px;
+  height: 310px;
+  padding: 16px;
+  border: 4px solid var(--cor-rosa-escuro);
+  border-radius: 20px;
+  margin-right: 28px;
 }
 
-.lista-ordenada-abordagem li {
-  font-weight: 700;
+.avaliacao-cliente div {
+  display: block;
 }
 
-.lista-nao-ordenada-abordagem li {
-  padding: 12px 20px;
-  font-weight: 400;
+.sigla-nome-cliente {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  padding-top: 14px;
+  border-radius: 50%;
+  background-color: #000;
+  font-size: 16px;
+  color: var(--cor-branco);
+  text-align: center;
 }
 
 /* secao metodologia de trabalho */
@@ -425,19 +454,14 @@ body {
   color: var(--cor-rosa-escuro);
 }
 
-/* Whatsapp */
+/* contatos */
 
-.whatsapp {
-  position: fixed;
-  bottom: 12px;
-  right: 6px;
-  width: 50px;
-}
 
 /* Seção rodapé */
 
 .rodape-pagina {
   width: 100%;
+  height: 50px;
 }
 
 .rodape-pagina span {
