@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background-color: var(--background-color-branco);
+  background-color: var(--header-background-color-rosa);
 }
 
 /* Cabeçalho */
@@ -60,6 +60,7 @@ body {
   width: 100%;
   height: 100%;
   color: black;
+  font-size: 14px;
   line-height: var(--altura-header);
   text-transform: uppercase;
   text-decoration: none;
@@ -77,20 +78,15 @@ body {
 
 .secoes-pagina {
   position: relative;
-  top: var(--altura-header);
   width: 100%;
-  min-height: 600px;
 }
 
 .secao-pagina {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   font-family: var(--font-family-droidserif), serif;
   margin-bottom: 4px;
-}
-
-.invertido {
-  flex-direction: row-reverse;
+  border-bottom: 4px solid var(--cor-branco);
 }
 
 .secao-pagina div {
@@ -107,12 +103,25 @@ body {
 
 /* Seção de inicial */
 
+.secao-pagina.secao-inicial {
+  height: 758px;
+}
+
+.secao-pagina.secao-inicial {
+  padding-top: var(--altura-header);
+}
+
 .secao-inicial h1 {
   display: none;
 }
 
 .secao-inicial-img-home {
   position: relative;
+}
+
+.img-inicial {
+  width: 100%;
+  height: 100%;
 }
 
 .secao-inicial-figcaption {
@@ -153,17 +162,12 @@ body {
   background-color: var(--cor-rosa-escuro);
 }
 
-.img-inicial {
-  width: 100%;
-}
-
 /* Seção Sintomas */
 
 .secao-sintomas {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  background-color: var(--header-background-color-rosa);
 }
 
 .secao-sintomas-img img {
@@ -194,6 +198,7 @@ body {
   font-weight: 700;
   color: var(--cor-rosa-escuro);
   text-align: center;
+  margin-top: 40px;
 }
 
 .secao-sintomas .secao-sintomas-precisa-desenvolver {
@@ -211,114 +216,316 @@ body {
   background-color: var(--cor-rosa-escuro);
 }
 
-/* Seção de formação */
+/* Quem eu sou */
 
-.secao-formacao {
+.secao-pagina.secao-quem-eu-sou {
+  padding: 24px 0;
+}
+
+.secao-quem-eu-sou figure {
   display: flex;
 }
 
-.secao-formacao h2 {
-  width: 280px;
-  line-height: 200px;
-  text-align: center;
-  font-weight: 700;
-  background-color: var(--header-background-color-rosa);
+.secao-quem-eu-sou figcaption {
+  padding: 0 26px;
 }
 
-.lista-ordenada-formacao {
+.secao-quem-eu-sou img {
+  height: 680px;
+}
+
+.lista-nao-ordenada-quem-eu-sou {
   list-style: inside;
-  list-style-type: decimal;
+  margin: 24px 0;
+}
+
+.lista-nao-ordenada-quem-eu-sou li {
+  line-height: 28px;
+}
+
+.secao-quem-eu-sou h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+  margin: 36px 0;
+}
+
+.secao-quem-eu-sou h3 {
+  line-height: 24px;
+}
+
+/* Seção areas que trabalho */
+
+.secao-areas-que-trabalho {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.secao-areas-que-trabalho .secao-areas-que-trabalho-titulo {
+  width: 20%;
+  align-items: center;
+  padding: 0 32px;
   color: var(--cor-branco);
-  padding: 48px;
   background-color: var(--cor-rosa-escuro);
 }
 
-.lista-ordenada-formacao li {
-  font-weight: bold;
-  line-height: 24px;
-}
-
-.lista-nao-ordenada-formacao {
-  list-style: inside;
-}
-
-.lista-nao-ordenada-formacao li {
-  height: 50px;
-  padding: 12px 20px;
-  font-weight: 400;
-}
-
-/* seção Abordagem Terapeutica */
-
-.secao-abordagem-terapeutica h2 {
+.secao-areas-que-trabalho-titulo h2 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
+}
+
+.secao-areas-que-trabalho .container-secao-areas-que-trabalho {
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 24px;
+}
+
+.container-secao-areas-que-trabalho div {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-secao-areas-que-trabalho span {
+  width: 280px;
+  font-size: 20px;
+  color: var(--cor-branco);
+  padding: 10px;
+  text-align: center;
+  background-color: var(--cor-rosa-escuro);
+}
+
+/* seção avaliações */
+
+.secao-avaliacoes-clientes {
+  padding: 36px 14px;
+}
+
+.secao-avaliacoes-clientes h2 {
+  font-size: 26px;
   font-weight: 700;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.secao-abordagem-terapeutica figcaption {
-  line-height: 24px;
+.container-avaliacoes-clientes {
+  width: 100%;
+  padding: 28px 26px;
+  overflow-x: scroll;
 }
 
-.lista-ordenada-abordagem {
-  list-style: inside;
-  list-style-type: decimal;
-  margin-top: 18px;
+.avaliacao-cliente {
+  position: relative;
+  width: 220px;
+  height: 310px;
+  padding: 16px;
+  border: 4px solid var(--cor-rosa-escuro);
+  border-radius: 20px;
+  margin-right: 28px;
 }
 
-.lista-ordenada-abordagem li {
-  font-weight: 700;
+.avaliacao-cliente div {
+  display: block;
 }
 
-.lista-nao-ordenada-abordagem li {
-  padding: 12px 20px;
-  font-weight: 400;
+.sigla-nome-cliente {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  padding-top: 14px;
+  border-radius: 50%;
+  background-color: #000;
+  font-size: 16px;
+  color: var(--cor-branco);
+  text-align: center;
 }
 
 /* secao metodologia de trabalho */
 
 .secao-metodologia-de-trabalho {
   display: flex;
+  flex-direction: column;
 }
 
 .secao-metodologia-de-trabalho h2 {
-  width: 320px;
-  line-height: 200px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.secao-metodologia-de-trabalho h3 {
   text-align: center;
   font-weight: 700;
-  color: var(--cor-branco);
-  background-color: var(--cor-rosa-escuro);
+  margin-bottom: 28px;
 }
 
-.descricao-metodologia {
-  flex-direction: column;
-  padding: 26px;
-  line-height: 24px;
-  background-color: var(--header-background-color-rosa);
-}
-
-.descricao-metodologia span {
-  margin-bottom: 20px;
+.container-lista-ordenada-metodologia-de-trabalho {
+  position: relative;
+  margin-bottom: 28px;
 }
 
 .lista-ordenada-metodologia-de-trabalho {
+  display: flex;
+  margin: 0 auto;
   list-style: inside;
   list-style-type: decimal;
+  counter-reset: contador;
+  z-index: 5;
 }
 
 .lista-ordenada-metodologia-de-trabalho li {
   font-weight: bold;
+  color: var(--cor-rosa-escuro);
+  margin-right: 16px;
 }
 
-.lista-nao-ordenada-metodologia-de-trabalho {
-  list-style: inside;
+.lista-ordenada-metodologia-de-trabalho li::marker {
+  z-index: 5;
 }
 
 .lista-nao-ordenada-metodologia-de-trabalho li {
-  height: 50px;
-  margin-bottom: 18px;
-  padding: 12px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 280px;
   font-weight: 400;
+  color: var(--cor-branco);
+  line-height: 22px;
+  text-align: center;
+  padding: 8px;
+  background-color: black;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho li::before {
+  counter-increment: contador;
+  content: counter(contador);
+  position: absolute;
+  top: -18px;
+  left: -26px;
+  width: 40px;
+  height: 30px;
+  padding-top: 8px;
+  background-color: var(--cor-rosa-escuro);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho li::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  width: 60px;
+  height: 10px;
+  background-color: var(--cor-rosa-escuro);
+  z-index: -1;
+}
+
+.lista-nao-ordenada-metodologia-de-trabalho.nao-exibir-after li::after {
+  display: none;
+}
+
+.descricao-metodologia {
+  text-align: center;
+  padding: 8px; 
+  font-size: 20px; 
+}
+
+.descricao-metodologia span {
+  margin: 0 40px 28px;
+}
+
+.descricao-metodologia strong {
+  line-height: 24px;
+  color: var(--cor-rosa-escuro);
+}
+/* seção secao-agende-sessao */
+
+.secao-agende-sessao {
+  padding: 24px 0;
+}
+
+.secao-agende-sessao h2 {
+  display: none;
+}
+
+.secao-agende-sessao figure {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.secao-agende-sessao figcaption {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.secao-agende-sessao p {
+  text-align: center;
+  padding: 0 160px;
+}
+
+.secao-agende-sessao strong {
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+}
+
+.botao-agende-sua-sessao {
+  padding: 16px;
+  font-size: 24px;
+  color: var(--cor-branco);
+  text-decoration: none;
+  background-color: var(--cor-rosa-escuro);
+  border-radius: 40px;
+  box-shadow: 0 4px rgb(0, 0, 0, 0.5);
+}
+
+.secao-agende-sessao .img-agende-sua-sessao {
+  width: 500px;
+  border-radius: 50%;
+}
+
+/* seção contatos */
+
+.secao-contatos h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.secao-contatos .cartao-de-visitas {
+  justify-content: space-around;
+  height: 500px;
+}
+
+.logo-cl-psicologia {
+  width: 500px;
+}
+
+.secao-pagina .container-contatos {
+  flex-direction: column;
+  height: 100%;
+  padding-top: 140px;
+}
+
+.container-contatos .link-contatos {
+  width: 180px;
+  height: 50px;
+  padding: 18px;
+  margin-bottom: 16px;
+  color: var(--cor-branco);
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: var(--cor-rosa-escuro);
 }
 
 /* Whatsapp */
@@ -334,6 +541,7 @@ body {
 
 .rodape-pagina {
   width: 100%;
+  height: 50px;
 }
 
 .rodape-pagina span {
