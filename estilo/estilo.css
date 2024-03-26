@@ -60,6 +60,7 @@ body {
   width: 100%;
   height: 100%;
   color: black;
+  font-size: 14px;
   line-height: var(--altura-header);
   text-transform: uppercase;
   text-decoration: none;
@@ -497,7 +498,43 @@ body {
 /* seção contatos */
 
 .secao-contatos h2 {
-  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.secao-contatos .cartao-de-visitas {
+  justify-content: space-around;
+  height: 500px;
+}
+
+.logo-cl-psicologia {
+  width: 500px;
+}
+
+.secao-pagina .container-contatos {
+  flex-direction: column;
+  height: 100%;
+  padding-top: 140px;
+}
+
+.container-contatos .link-contatos {
+  width: 180px;
+  height: 50px;
+  padding: 18px;
+  margin-bottom: 16px;
+  color: var(--cor-branco);
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: var(--cor-rosa-escuro);
+}
+
+/* Whatsapp */
+
+.whatsapp {
+  position: fixed;
+  bottom: 12px;
+  right: 6px;
+  width: 50px;
 }
 
 /* Seção rodapé */
