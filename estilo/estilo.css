@@ -13,6 +13,7 @@ body {
 }
 
 body {
+  color: var(--cor-azul-marinho);
   background-color: var(--header-background-color-rosa);
 }
 
@@ -339,7 +340,7 @@ body {
   height: 50px;
   padding-top: 14px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--cor-azul-marinho);
   font-size: 16px;
   color: var(--cor-branco);
   text-align: center;
@@ -402,7 +403,7 @@ body {
   line-height: 22px;
   text-align: center;
   padding: 8px;
-  background-color: black;
+  background-color: var(--cor-azul-marinho);
 }
 
 .lista-nao-ordenada-metodologia-de-trabalho li::before {
